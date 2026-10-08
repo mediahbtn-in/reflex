@@ -37,7 +37,7 @@ const bump = (p: number, a: number, b: number, c: number, d: number) => seg(p, a
 // (exterior shots dolly back on portrait screens; interiors widen fov instead).
 type Key = { p: number; pos: [number, number, number]; tgt: [number, number, number]; fov: number; shift: number; ext: number };
 export const KEYS: Key[] = [
-  { p: 0.0, pos: [1, 37, 1.6], tgt: [1, 0, 1.59], fov: 40, shift: 0.17, ext: 1 },
+  { p: 0.0, pos: [1, 41, 1.6], tgt: [1, 0, 1.59], fov: 40, shift: 0.17, ext: 1 },
   { p: 0.06, pos: [2, 30, 11], tgt: [1, 0, 0.6], fov: 40, shift: 0.15, ext: 1 },
   { p: 0.13, pos: [8, 19, 25], tgt: [1, 1.6, 0], fov: 38, shift: 0.13, ext: 1 },
   { p: 0.2, pos: [17, 13, 20], tgt: [1, 0.2, 0], fov: 38, shift: 0.13, ext: 1 },
@@ -1386,7 +1386,8 @@ export class BuildScene {
     cam.up.set(0, 1, 0);
     cam.lookAt(this.tmpT);
     // Portrait hero: push the drawing into the lower half so the headline sits on clean paper.
-    const shiftY = !o.camera && aspect < 1 ? 0.2 * (1 - smooth(seg(p, 0.02, 0.12))) : 0;
+    // Desktop: a small drop keeps the drawing's grid bubbles clear of the nav bar.
+    const shiftY = o.camera ? 0 : (aspect < 1 ? 0.2 : 0.06) * (1 - smooth(seg(p, 0.02, 0.12)));
     if (Math.abs(shift) > 0.001 || shiftY > 0.001) {
       cam.setViewOffset(this.width, this.height, -shift * this.width, -shiftY * this.height, this.width, this.height);
     } else cam.clearViewOffset();
