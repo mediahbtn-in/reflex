@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 56" role="img" aria-label="Reflex Interior and Construction">
+  <!-- Vector stand-in for the supplied Reflex logo. Replace with the original artwork. -->
+  <g fill="none" stroke="#0B3158" stroke-width="2.6" stroke-linecap="square">
+    <path d="M5 47V22L24 9l19 13v25"/>
+    <path d="M15.5 47V25.5h10.5a6 6 0 0 1 0 12H15.5"/>
+    <path d="M23.5 37.5L32.5 47"/>
+  </g>
+  <rect x="35" y="13" width="3" height="6.5" fill="#0B3158"/>
+  <text x="60" y="34" font-family="Manrope, Inter, Arial, sans-serif" font-weight="800" font-size="27" letter-spacing="6" fill="#0B3158">REFLEX</text>
+  <text x="61" y="48" font-family="Manrope, Inter, Arial, sans-serif" font-weight="500" font-size="8.6" letter-spacing="3.1" fill="#174F82">INTERIOR AND CONSTRUCTION</text>
+</svg>
