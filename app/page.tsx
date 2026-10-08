@@ -19,7 +19,6 @@ export default function Home() {
         <div className="wrap">
           <Reveal className="section__head">
             <div>
-              <span className="eyebrow" data-rv="fade">Before → After</span>
               <Lines as="h2" className="h2" lines={["Concept to", <strong key="c">completion.</strong>]} />
             </div>
             <p className="lead" data-rv="fade">

@@ -20,7 +20,6 @@ export default function Contact() {
       <section className="section" id="quote">
         <div className="wrap split">
           <div>
-            <span className="eyebrow" style={{ display: "block", marginBottom: 22 }}>Get a quote</span>
             <h2 className="h2" style={{ marginBottom: 48 }}>Tell us about <strong>your space.</strong></h2>
             <div className="contact-list">
               <a href={`mailto:${site.email}`}><span className="eyebrow">Email</span>{site.email}</a>

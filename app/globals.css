@@ -2040,18 +2040,6 @@ p {
 .phero__lead {
   margin-top: 32px;
 }
-.crumbs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 40px;
-  font-family: var(--f-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-}
-.crumbs a:hover {
-  color: var(--blue);
-}
 @media (max-width: 900px) {
   .phero__plan {
     opacity: 0.18;

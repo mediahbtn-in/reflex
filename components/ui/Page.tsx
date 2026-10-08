@@ -12,11 +12,6 @@ export function PageHero({ title, lead, crumb }: { title: React.ReactNode[]; lea
         </Reveal>
       </div>
       <Reveal className="wrap phero__inner">
-        <nav className="crumbs" aria-label="Breadcrumb" data-rv="fade">
-          <Link href="/">Reflex</Link>
-          <span>/</span>
-          <span aria-current="page">{crumb}</span>
-        </nav>
         <Lines as="h1" className="display phero__title" lines={title} />
         <p className="lead phero__lead" data-rv="fade">{lead}</p>
       </Reveal>
@@ -71,12 +66,11 @@ export function CtaBand({ title = "Let's build something better.", text = "Tell 
   );
 }
 
-export function SplitBlock({ eyebrow, title, children, image, alt, flip }: { eyebrow: string; title: React.ReactNode[]; children: React.ReactNode; image: string; alt: string; flip?: boolean }) {
+export function SplitBlock({ title, children, image, alt, flip }: { title: React.ReactNode[]; children: React.ReactNode; image: string; alt: string; flip?: boolean }) {
   return (
     <section className="section">
       <Reveal className="wrap split split--center">
         <div style={{ order: flip ? 2 : 0 }}>
-          <span className="eyebrow" data-rv="fade" style={{ display: "block", marginBottom: 22 }}>{eyebrow}</span>
           <Lines as="h2" className="h2" lines={title} />
           <div className="prose" data-rv="fade" style={{ marginTop: 32 }}>{children}</div>
         </div>

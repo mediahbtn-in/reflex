@@ -9,9 +9,6 @@ export function BrandMessage() {
     <section className="brand" id="about" aria-labelledby="brand-title">
       <div className="bp-grid" aria-hidden="true" />
       <Reveal className="wrap" stagger={0.1}>
-        <p className="eyebrow eyebrow--light" data-rv="fade" style={{ marginBottom: 40 }}>
-          Reflex Interior and Construction
-        </p>
         <Lines as="h2" className="brand__statement" lines={["Spaces that build", <strong key="b">a brighter</strong>, <strong key="c">tomorrow.</strong>]} />
         <div className="brand__row">
           <p className="brand__support" data-rv="fade">
@@ -32,7 +29,6 @@ export function Services() {
       <div className="wrap">
         <Reveal className="section__head">
           <div>
-            <span className="eyebrow" data-rv="fade">Our expertise</span>
             <Lines as="h2" className="h2" lines={["One studio.", <strong key="s">Six disciplines.</strong>]} />
           </div>
           <p className="lead" data-rv="fade">
@@ -73,7 +69,6 @@ export function WhyReflex() {
       <div className="wrap" style={{ position: "relative" }}>
         <Reveal className="section__head">
           <div>
-            <span className="eyebrow eyebrow--light" data-rv="fade">Why Reflex</span>
             <Lines as="h2" className="h2" lines={["Engineered", <strong key="w">differently.</strong>]} />
           </div>
           <p className="lead" style={{ color: "rgba(255,255,255,.66)" }} data-rv="fade">
@@ -146,7 +141,6 @@ export function Projects() {
       <div className="wrap">
         <Reveal className="section__head">
           <div>
-            <span className="eyebrow" data-rv="fade">Selected projects</span>
             <Lines as="h2" className="h2" lines={["Visions,", <strong key="p">delivered.</strong>]} />
           </div>
           <div style={{ justifySelf: "end", display: "flex", flexDirection: "column", gap: 24, alignItems: "flex-end" }}>

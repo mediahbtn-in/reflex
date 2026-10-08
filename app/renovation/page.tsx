@@ -16,7 +16,7 @@ export default function Renovation() {
         title={["Respect what", "exists.", <strong key="b">Unlock what could be.</strong>]}
         lead="We survey, re-plan and rebuild existing homes and workplaces — opening up rooms, adding light and upgrading every system behind the walls."
       />
-      <SplitBlock eyebrow="Approach" title={["Careful by", <strong key="d">design.</strong>]} image="/images/svc-renovation.webp" alt="Building enclosure during renovation" flip>
+      <SplitBlock title={["Careful by", <strong key="d">design.</strong>]} image="/images/svc-renovation.webp" alt="Building enclosure during renovation" flip>
         <p>
           Renovation starts with understanding: a measured survey, a structural assessment and an honest view of what to
           keep. From there we plan the work in phases that suit how you use the space.
@@ -27,7 +27,6 @@ export default function Renovation() {
         <div className="wrap">
           <div className="section__head">
             <div>
-              <span className="eyebrow">Transformation</span>
               <h2 className="h2">Concept <strong>to completion.</strong></h2>
             </div>
             <p className="lead">Drag across the image to move from blueprint to finished interior.</p>

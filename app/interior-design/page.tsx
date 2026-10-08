@@ -15,7 +15,7 @@ export default function InteriorDesign() {
         title={["Spaces", <strong key="a">designed</strong>, <strong key="b">around you.</strong>]}
         lead="Warm, considered interiors where light, material and joinery work as one — designed in 3D, then built by the same team."
       />
-      <SplitBlock eyebrow="Approach" title={["Every material.", <strong key="d">Every detail.</strong>]} image="/images/proj-kitchen.webp" alt="Oak and marble kitchen designed by Reflex">
+      <SplitBlock title={["Every material.", <strong key="d">Every detail.</strong>]} image="/images/proj-kitchen.webp" alt="Oak and marble kitchen designed by Reflex">
         <p>
           We begin with how you live: where morning light falls, how you cook, where you gather. Layouts follow, then
           materials — natural oak, honed stone, brushed metal — and finally lighting layered for every hour of the day.
@@ -29,7 +29,6 @@ export default function InteriorDesign() {
         <div className="wrap">
           <div className="section__head">
             <div>
-              <span className="eyebrow">What&apos;s included</span>
               <h2 className="h2">From concept <strong>to fit-out.</strong></h2>
             </div>
           </div>
@@ -48,7 +47,6 @@ export default function InteriorDesign() {
       <section className="section">
         <div className="wrap split">
           <div>
-            <span className="eyebrow" style={{ display: "block", marginBottom: 22 }}>FAQ</span>
             <h2 className="h2">Good <strong>questions.</strong></h2>
           </div>
           <Faq

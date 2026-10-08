@@ -15,7 +15,7 @@ export default function Construction() {
         title={["Engineered", <strong key="a">for strength</strong>, <strong key="b">and longevity.</strong>]}
         lead="From the first footing to the final finish, our construction teams build exactly what was designed — precisely, safely and on schedule."
       />
-      <SplitBlock eyebrow="On site" title={["Strong foundations,", <strong key="d">better tomorrows.</strong>]} image="/images/svc-construction.webp" alt="Concrete structure under construction">
+      <SplitBlock title={["Strong foundations,", <strong key="d">better tomorrows.</strong>]} image="/images/svc-construction.webp" alt="Concrete structure under construction">
         <p>
           Every Reflex build starts with a coordinated set of architectural and structural drawings, a detailed bill of
           quantities and a programme you can follow week by week.
@@ -29,7 +29,6 @@ export default function Construction() {
         <div className="wrap">
           <div className="section__head">
             <div>
-              <span className="eyebrow">Scope</span>
               <h2 className="h2">Built <strong>stage by stage.</strong></h2>
             </div>
           </div>
@@ -48,7 +47,6 @@ export default function Construction() {
       <section className="section">
         <div className="wrap split">
           <div>
-            <span className="eyebrow" style={{ display: "block", marginBottom: 22 }}>FAQ</span>
             <h2 className="h2">Before you <strong>break ground.</strong></h2>
           </div>
           <Faq

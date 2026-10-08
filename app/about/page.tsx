@@ -15,7 +15,7 @@ export default function About() {
         title={["One team.", <strong key="a">One complete</strong>, <strong key="b">journey.</strong>]}
         lead="Reflex brings architects, engineers, site teams and interior designers together under one roof — so the person who draws your space is working beside the people who build and finish it."
       />
-      <SplitBlock eyebrow="Our story" title={["Built around", <strong key="v">your vision.</strong>]} image="/images/proj-cantilever.webp" alt="Cantilevered Reflex home at dusk">
+      <SplitBlock title={["Built around", <strong key="v">your vision.</strong>]} image="/images/proj-cantilever.webp" alt="Cantilevered Reflex home at dusk">
         <p>
           Too many projects lose something between the drawing and the finished room. Design intent gets value-engineered
           away, contractors work from incomplete details, and interiors are bolted on at the end.
@@ -30,7 +30,6 @@ export default function About() {
         <div className="wrap">
           <div className="section__head">
             <div>
-              <span className="eyebrow">What we believe</span>
               <h2 className="h2">Principles <strong>we build by.</strong></h2>
             </div>
           </div>

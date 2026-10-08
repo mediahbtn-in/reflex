@@ -60,7 +60,6 @@ export default function Process() {
       <div className="process__pin">
         <div className="wrap process__head">
           <div>
-            <span className="eyebrow" style={{ display: "block", marginBottom: 22 }}>Our process</span>
             <h2 className="h2" id="process-title">
               From idea <strong>to keys.</strong>
             </h2>
