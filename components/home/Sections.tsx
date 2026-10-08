@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Reveal, { Lines } from "@/components/ui/Reveal";
 import { ServiceIcon, WhyDiagram } from "@/components/ui/ArchIcons";
-import Logo from "@/components/ui/Logo";
 import { projects, services, type Project } from "@/lib/site";
 
 export function BrandMessage() {
@@ -166,9 +165,6 @@ export function FinalCTA() {
         <img src="/images/final-night.webp" alt="" loading="lazy" decoding="async" width={1920} height={1080} data-parallax />
       </div>
       <Reveal className="wrap final__inner">
-        <div data-rv="fade">
-          <Logo />
-        </div>
         <Lines as="h2" className="final__title" lines={["Let's build", <strong key="s">something better.</strong>]} />
         <p className="final__text" data-rv="fade">
           <span>Have a space in mind?</span>
