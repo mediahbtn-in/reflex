@@ -654,23 +654,6 @@ p {
 .scopy.is-live {
   pointer-events: auto;
 }
-.scopy__label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--blue-2);
-  margin-bottom: 28px;
-  display: inline-flex;
-  gap: 8px;
-}
-.scopy--light .scopy__label {
-  color: var(--gold);
-}
-.scopy__label span {
-  font-family: var(--f-mono);
-  letter-spacing: 0.1em;
-}
 .scopy__seo {
   font-size: 12px;
   font-weight: 500;
@@ -1056,9 +1039,6 @@ p {
   .scopy--center {
     bottom: calc(60px + env(safe-area-inset-bottom));
     text-align: center;
-  }
-  .scopy__label {
-    margin-bottom: 14px;
   }
   .scopy__title {
     font-size: clamp(36px, 11vw, 52px);
@@ -2052,20 +2032,6 @@ p {
 }
 .phero__inner {
   position: relative;
-}
-.phero__label {
-  display: inline-flex;
-  gap: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--blue-2);
-  margin-bottom: 28px;
-}
-.phero__label span {
-  font-family: var(--f-mono);
-  letter-spacing: 0.1em;
 }
 .phero__title {
   max-width: 14ch;

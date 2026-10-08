@@ -11,8 +11,6 @@ export default function Construction() {
   return (
     <>
       <PageHero
-        n="04"
-        label="Construction"
         crumb="Construction"
         title={["Engineered", <strong key="a">for strength</strong>, <strong key="b">and longevity.</strong>]}
         lead="From the first footing to the final finish, our construction teams build exactly what was designed — precisely, safely and on schedule."

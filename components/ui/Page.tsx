@@ -2,7 +2,7 @@ import Link from "next/link";
 import Reveal, { Lines } from "./Reveal";
 import { PlanArt } from "./ArchIcons";
 
-export function PageHero({ n, label, title, lead, crumb }: { n: string; label: string; title: React.ReactNode[]; lead: string; crumb: string }) {
+export function PageHero({ title, lead, crumb }: { title: React.ReactNode[]; lead: string; crumb: string }) {
   return (
     <header className="phero">
       <div className="phero__grid" aria-hidden="true" />
@@ -17,9 +17,6 @@ export function PageHero({ n, label, title, lead, crumb }: { n: string; label: s
           <span>/</span>
           <span aria-current="page">{crumb}</span>
         </nav>
-        <p className="phero__label" data-rv="fade">
-          <span>{n}</span> — {label}
-        </p>
         <Lines as="h1" className="display phero__title" lines={title} />
         <p className="lead phero__lead" data-rv="fade">{lead}</p>
       </Reveal>

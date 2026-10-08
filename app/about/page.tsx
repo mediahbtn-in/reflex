@@ -11,8 +11,6 @@ export default function About() {
   return (
     <>
       <PageHero
-        n="01"
-        label="About"
         crumb="About"
         title={["One team.", <strong key="a">One complete</strong>, <strong key="b">journey.</strong>]}
         lead="Reflex brings architects, engineers, site teams and interior designers together under one roof — so the person who draws your space is working beside the people who build and finish it."

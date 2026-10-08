@@ -11,8 +11,6 @@ export default function InteriorDesign() {
   return (
     <>
       <PageHero
-        n="03"
-        label="Interior Design"
         crumb="Interior Design"
         title={["Spaces", <strong key="a">designed</strong>, <strong key="b">around you.</strong>]}
         lead="Warm, considered interiors where light, material and joinery work as one — designed in 3D, then built by the same team."

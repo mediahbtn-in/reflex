@@ -12,8 +12,6 @@ export default function Renovation() {
   return (
     <>
       <PageHero
-        n="05"
-        label="Renovation"
         crumb="Renovation"
         title={["Respect what", "exists.", <strong key="b">Unlock what could be.</strong>]}
         lead="We survey, re-plan and rebuild existing homes and workplaces — opening up rooms, adding light and upgrading every system behind the walls."

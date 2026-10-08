@@ -24,8 +24,6 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        n="02"
-        label="Services"
         crumb="Services"
         title={["Design.", "Construct.", <strong key="t">Transform.</strong>]}
         lead="Six disciplines, one accountable team. Engage us for a single service or for the complete journey from blueprint to finished space."

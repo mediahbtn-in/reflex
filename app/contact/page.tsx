@@ -13,8 +13,6 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        n="07"
-        label="Contact"
         crumb="Contact"
         title={["Let's build", <strong key="s">something better.</strong>]}
         lead="Have a space in mind? Tell us a little about it and we'll come back within two working days with a clear next step."

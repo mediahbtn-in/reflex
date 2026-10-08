@@ -281,7 +281,6 @@ export default function BuildStory() {
               className={`scopy scopy--${c.align} scopy--${c.tone} ${i === 0 ? "scopy--hero" : ""}`}
               style={i === 0 ? undefined : { opacity: 0, visibility: "hidden" }}
             >
-              <p className="scopy__label"><span>{c.n}</span> — {c.label}</p>
               {i === 0 ? (
                 <>
                   <h1 className="scopy__seo">Interior &amp; Construction — Built Around Your Vision</h1>

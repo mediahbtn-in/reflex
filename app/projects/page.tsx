@@ -12,8 +12,6 @@ export default function ProjectsPage() {
   return (
     <>
       <PageHero
-        n="06"
-        label="Projects"
         crumb="Projects"
         title={["Selected", <strong key="p">projects.</strong>]}
         lead="Residential, interiors, commercial, renovation and turnkey — every project taken from vision to reality by one team."
