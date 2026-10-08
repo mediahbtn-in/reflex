@@ -1029,8 +1029,26 @@ p {
     text-align: left;
   }
   .scopy--hero {
-    top: calc(var(--nav-h) + 20px);
+    top: calc(var(--nav-h) + 16px);
     bottom: auto;
+  }
+  /* Clean paper behind the headline so the blueprint never runs through the type */
+  .scopy--hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: calc(-1 * var(--gutter));
+    right: calc(-1 * var(--gutter));
+    top: calc(-1 * var(--nav-h) - 16px);
+    bottom: -56px;
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper) 78%, rgba(244, 247, 250, 0));
+    pointer-events: none;
+  }
+  .scopy--hero .scopy__title--hero {
+    font-size: clamp(32px, 9.4vw, 44px);
+  }
+  .scopy--hero .scopy__text {
+    margin-top: 12px;
   }
   .scopy--right .scopy__text {
     align-items: flex-start;

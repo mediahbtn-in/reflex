@@ -1385,8 +1385,10 @@ export class BuildScene {
     cam.fov = vfov;
     cam.up.set(0, 1, 0);
     cam.lookAt(this.tmpT);
-    if (Math.abs(shift) > 0.001) {
-      cam.setViewOffset(this.width, this.height, -shift * this.width, 0, this.width, this.height);
+    // Portrait hero: push the drawing into the lower half so the headline sits on clean paper.
+    const shiftY = !o.camera && aspect < 1 ? 0.2 * (1 - smooth(seg(p, 0.02, 0.12))) : 0;
+    if (Math.abs(shift) > 0.001 || shiftY > 0.001) {
+      cam.setViewOffset(this.width, this.height, -shift * this.width, -shiftY * this.height, this.width, this.height);
     } else cam.clearViewOffset();
     cam.updateProjectionMatrix();
   }
