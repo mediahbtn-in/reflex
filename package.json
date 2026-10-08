@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx http-server out -p 3000",
+    "build:static": "STATIC_EXPORT=1 next build",
+    "start": "next start",
+    "render": "node scripts/render/render.mjs",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
@@ -22,7 +24,6 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@types/three": "^0.186.0",
-    "esbuild": "^0.25.12",
     "typescript": "5.9"
   }
 }

@@ -1,6 +1,5 @@
 // Usage: node scripts/render/render.mjs   (needs a Chromium with WebGL; uses Playwright)
 // Bundles entry.ts with esbuild, opens it headless and writes WebP stills to public/images.
-import { build } from "esbuild";
 import { createServer } from "node:http";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
@@ -10,6 +9,12 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "../..");
 const outDir = path.join(here, "../.render");
 await mkdir(outDir, { recursive: true });
+// esbuild is not a project dependency (keeps deploy installs script-free):
+//   npm i --no-save esbuild playwright
+const { build } = await import("esbuild").catch(() => {
+  console.error("Install the render tools first:  npm i --no-save esbuild playwright");
+  process.exit(1);
+});
 await build({ entryPoints: [path.join(here, "entry.ts")], bundle: true, outfile: path.join(outDir, "bundle.js"), format: "iife", target: "es2020", logLevel: "warning" });
 await writeFile(path.join(outDir, "index.html"), await readFile(path.join(here, "index.html")));
 

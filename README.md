@@ -5,7 +5,7 @@
 `BLUEPRINT → FOUNDATION → STRUCTURE → ENCLOSURE → EXTERIOR → INTERIOR → DETAILS → COMPLETED HOME → services · projects · quote`
 
 ## Stack
-- **Next.js (App Router, static export)**: every route is pre-rendered HTML for SEO (`/`, `/about`, `/services`, `/interior-design`, `/construction`, `/renovation`, `/projects`, `/contact`, plus `sitemap.xml` and `robots.txt`).
+- **Next.js (App Router)**: every route is pre-rendered to static HTML at build time for SEO (`/`, `/about`, `/services`, `/interior-design`, `/construction`, `/renovation`, `/projects`, `/contact`, plus `sitemap.xml` and `robots.txt`).
 - **Three.js**: one procedural scene (`lib/scene/BuildScene.ts`) with no model files. Scroll progress `p ∈ [0,1]` drives every element, light and camera key, so scrolling backwards reverses the build exactly. The bundle is code-split and loads after first paint.
 - **Lenis + GSAP ScrollTrigger**: smooth scrolling and section reveals.
 - `lib/scene/plan.ts` is the single source of truth for the house. The blueprint sheet, the 3D wireframe and the physical building are all generated from it, so drawing and construction line up.
@@ -14,12 +14,14 @@
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run build      # static site in ./out — deploy to any CDN / static host
+npm run build          # production build (Vercel runs this automatically)
+npm run build:static   # fully static site in ./out for any other static host
 ```
 
 ## Imagery
 Portfolio, service, before/after and CTA images in `public/images` are WebP stills rendered from the same 3D model:
 ```bash
+npm i --no-save esbuild playwright       # one-off render tools
 node scripts/render/render.mjs            # all shots
 node scripts/render/render.mjs og proj-oak  # selected shots
 ```

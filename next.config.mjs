@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Fully static export: every route (/, /about, /services, …) is pre-rendered
-  // to HTML for fast first paint and SEO. Deploy the `out/` folder to any CDN.
-  output: "export",
+  // On Vercel the app deploys as a regular Next.js app (every page is still
+  // pre-rendered at build time). For any other static host run
+  // `npm run build:static`, which writes a fully static site to ./out.
+  ...(process.env.STATIC_EXPORT === "1" ? { output: "export", images: { unoptimized: true } } : {}),
   trailingSlash: true,
-  images: { unoptimized: true },
   reactStrictMode: true,
   poweredByHeader: false,
   agentRules: false,
