@@ -69,8 +69,9 @@ export const LABELS: LabelDef[] = [
   { id: "s1", pos: [8, 2.2, 5], title: "RCC Column", sub: "350 × 350 · M30", range: [0.29, 0.305, 0.37, 0.385] },
   { id: "s2", pos: [9.6, 3.4, 4.1], title: "Cantilever", sub: "2.0 m transfer beam", range: [0.33, 0.345, 0.39, 0.4] },
   { id: "e1", pos: [4, 1.7, 5.1], title: "Structural glazing", sub: "Double glazed · Low-E", range: [0.445, 0.46, 0.5, 0.515] },
-  { id: "x1", pos: [-6.2, 1.6, 5.2], title: "Ledgestone", sub: "Natural stone cladding", range: [0.54, 0.555, 0.595, 0.61] },
-  { id: "x2", pos: [2.5, 5.2, 4.2], title: "Thermo-oak slats", sub: "Vertical timber rainscreen", range: [0.545, 0.56, 0.595, 0.61] },
+  // Exterior labels wait until the camera has passed the front-left tree (it occludes p ≈ 0.57–0.585).
+  { id: "x1", pos: [-6.2, 1.6, 5.2], title: "Ledgestone", sub: "Natural stone cladding", range: [0.589, 0.597, 0.624, 0.634] },
+  { id: "x2", pos: [-1.5, 3.9, 4.2], title: "Thermo-oak slats", sub: "Vertical timber rainscreen", range: [0.59, 0.598, 0.607, 0.615] },
   { id: "d1", pos: [-4.1, 1.16, -1.55], title: "Marble", sub: "Calacatta · honed", range: [0.795, 0.81, 0.865, 0.88] },
   { id: "d2", pos: [-2.4, 0.62, -1.28], title: "Natural oak", sub: "Rift-sawn veneer", range: [0.8, 0.815, 0.865, 0.88] },
   { id: "d3", pos: [-3.2, 1.55, -1.98], title: "Brushed metal", sub: "Satin nickel fixtures", range: [0.805, 0.82, 0.865, 0.88] },
