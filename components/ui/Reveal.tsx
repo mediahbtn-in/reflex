@@ -28,7 +28,7 @@ export default function Reveal({ children, className, as: Tag = "div", stagger =
       gsap.set(fades, { opacity: 0, y: 18 });
       gsap.set(rules, { scaleX: 0, transformOrigin: "left center" });
       gsap.set(imgs, { clipPath: "inset(0 0 100% 0)" });
-      const tl = gsap.timeline({ scrollTrigger: { trigger: el, start: "top 82%", once: true } });
+      const tl = gsap.timeline({ scrollTrigger: { trigger: el, start: "top 82%", toggleActions: "play none none none" } });
       tl.to(rules, { scaleX: 1, duration: 1.2, ease: "power3.inOut", stagger: 0.06 }, 0)
         .to(lines, { yPercent: 0, duration: 1.15, ease: "power4.out", stagger }, 0.05)
         .to(imgs, { clipPath: "inset(0 0 0% 0)", duration: 1.4, ease: "power3.inOut", stagger: 0.12 }, 0.1)
